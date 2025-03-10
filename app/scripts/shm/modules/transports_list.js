@@ -20,6 +20,7 @@ angular.module('shm_transports_list', [
                 'ssh',
                 'mail',
                 'telegram',
+                'mydevice',
             ];
 
             $scope.items = data;
