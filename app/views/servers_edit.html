@@ -80,7 +80,7 @@
                 <input type="email" class="form-control" ng-model="data.settings.bcc">
             </div>
         </div>
-        <div class="form-group" ng-if="data.server.transport=='ssh'">
+        <div class="form-group" ng-if="data.server.transport=='ssh' || data.server.transport=='sshsimple'">
             <label class="col-sm-2 control-label">Ключ</label>
             <div class="col-sm-8">
                 <identities-list data="data.settings.key_id"></identities-list>
@@ -94,7 +94,7 @@
             <div class="col-sm-8">
                 <select class="form-control" ng-model="data.mode" required=1>
                     <option value="template">Шаблон</option>
-                    <option ng-if="data.server.transport=='ssh'" value="cmd">Команду</option>
+                    <option ng-if="data.server.transport=='ssh' || data.server.transport=='sshsimple'" value="cmd">Команду</option>
                 </select>
             </div>
         </div>
@@ -125,8 +125,8 @@
     </div> <!-- modal-body -->
 
     <div class="modal-footer">
-        <button class="btn btn-info" ng-disabled="userForm.$invalid" ng-click="test_ssh()" ng-if="data.server.transport=='ssh'">TEST SSH</button>
-        <button class="btn btn-success" ng-disabled="userForm.$invalid" ng-click="template_init()" ng-if="data.server_id && data.server.transport=='ssh' && data.mode=='template'">INIT</button>
+        <button class="btn btn-info" ng-disabled="userForm.$invalid" ng-click="test_ssh()" ng-if="data.server.transport=='ssh' || data.server.transport=='sshsimple'">TEST SSH</button>
+        <button class="btn btn-success" ng-disabled="userForm.$invalid" ng-click="template_init()" ng-if="data.server_id && data.server.transport=='ssh' || data.server.transport=='sshsimple' && data.mode=='template'">INIT</button>
         <button class="btn btn-info" ng-disabled="userForm.$invalid" ng-click="test_mail()" ng-if="data.server.transport=='mail'">TEST MAIL</button>
         <button class="btn btn-primary" ng-disabled="userForm.$invalid" ng-click="save()">Save</button>
         <button class="btn btn-danger pull-left" ng-show="data.server_id" ng-click="delete()">Delete</button>

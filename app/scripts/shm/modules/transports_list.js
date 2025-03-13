@@ -18,6 +18,7 @@ angular.module('shm_transports_list', [
                 'local',
                 'http',
                 'ssh',
+                'sshsimple',
                 'mail',
                 'telegram',
             ];
