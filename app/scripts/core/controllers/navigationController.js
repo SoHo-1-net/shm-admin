@@ -42,6 +42,10 @@ angular
             url: '#!/storage',
           },
           {
+            label: 'Банки',
+            url: '#!/banks',
+          },
+          {
             label: 'Промокоды',
             url: '#!/promo',
           },

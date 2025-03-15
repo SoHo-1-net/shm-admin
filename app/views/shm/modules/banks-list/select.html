@@ -1,0 +1,5 @@
+<select class="form-control" ng-model="id" ng-disabled="!items||readonly">
+    <option ng-value="item.bank_id" ng-repeat="item in items">
+        ID: {{ item.bank_id }} - {{ item.bank_name_base }} (БИК: {{ item.bic_base }})
+    </option>
+</select>

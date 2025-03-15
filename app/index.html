@@ -5,11 +5,11 @@
 >
 <head>
   <meta charset="utf-8">
-  <title>SHM Admin</title>
+  <title>AMIGO Admin</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SHM Admin">
-    <meta name="author" content="DaNuk (DNk)">
+    <meta name="description" content="AMIGO Admin">
+    <meta name="author" content="DaNuk (DNk) edit SoHo-Kruper">
 
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/ng-grid/ng-grid.css" />
@@ -38,59 +38,6 @@
 >
 
 <!-- HEADER -->
-    <div class="extrabar">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="info-tile info-tile-alt tile-warning">
-                    <div class="tile-icon"><i class="ti ti-eye"></i></div>
-                    <div class="tile-heading"><span>Page Views</span></div>
-                    <div class="tile-body"><span>1,600</span></div>
-                    <div class="tile-footer"><span class="text-danger">-7.6% <i class="ti ti-arrow-down"></i></span></div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="info-tile info-tile-alt tile-success">
-                    <div class="tile-icon"><i class="ti ti-thumb-up"></i></div>
-                    <div class="tile-heading"><span>Likes</span></div>
-                    <div class="tile-body"><span>345</span></div>
-                    <div class="tile-footer"><span class="text-success">+15.4% <i class="ti ti-arrow-up"></i></span></div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="info-tile info-tile-alt tile-danger">
-                    <div class="tile-icon"><i class="ti ti-check-box"></i></div>
-                    <div class="tile-heading"><span>Bugs Fixed</span></div>
-                    <div class="tile-body"><span>21</span></div>
-                    <div class="tile-footer"><span class="text-success">+10.4% <i class="ti ti-arrow-up"></i></span></div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="info-tile info-tile-alt tile-info">
-                    <div class="tile-icon"><i class="ti ti-user"></i></div>
-                    <div class="tile-heading"><span>New Members</span></div>
-                    <div class="tile-body"><span>124</span></div>
-                    <div class="tile-footer"><span class="text-danger">-25.4% <i class="ti ti-arrow-down"></i></span></div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="info-tile info-tile-alt tile-teal">
-                    <div class="tile-icon"><i class="ti ti-gift"></i></div>
-                    <div class="tile-heading"><span>Gifts</span></div>
-                    <div class="tile-body"><span>16</span></div>
-                    <div class="tile-footer"><span class="text-danger">-7.6% <i class="ti ti-arrow-down"></i></span></div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="info-tile info-tile-alt tile-indigo">
-                    <div class="tile-icon"><i class="ti ti-menu-alt"></i></div>
-                    <div class="tile-heading"><span>Tasks</span></div>
-                    <div class="tile-body"><span>17</span></div>
-                    <div class="tile-footer"><span class="text-danger">-26.4% <i class="ti ti-arrow-down"></i></span></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <header
         id="topnav"
         class="navbar ng-hide {{getLayoutOption('topNavThemeClass')}}"
@@ -109,7 +56,7 @@
                 </a>
             </span>
 
-            <a class="navbar-brand" href="#/">SHM Admin</a>
+            <a class="navbar-brand" href="#/">AMIGO Admin</a>
         </div>
 
         <div class="yamm navbar-left navbar-collapse collapse in">
@@ -374,6 +321,7 @@
     <script src="node_modules/angular-ui-grid/ui-grid.min.js"></script>
     <script src="node_modules/angular-jsoneditor/dist/angular-jsoneditor.js"></script>
 
+    <script src="scripts/shm/modules/banks_select.js"></script>
     <script src="scripts/shm/modules/table.js"></script>
     <script src="scripts/shm/modules/table_tree.js"></script>
     <script src="scripts/shm/modules/shm.js"></script>
@@ -398,6 +346,7 @@
     <script src="scripts/shm/services.js"></script>
     <script src="scripts/shm/templates.js"></script>
     <script src="scripts/shm/config.js"></script>
+    <script src="scripts/shm/banks.js"></script>
     <script src="scripts/shm/profiles.js"></script>
     <script src="scripts/shm/servers.js"></script>
     <script src="scripts/shm/servers_groups.js"></script>

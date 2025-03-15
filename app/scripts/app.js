@@ -15,6 +15,7 @@ angular
     'shm_templates',
     'shm_config',
     'shm_profiles',
+    'shm_banks',
     'shm_services',
     'shm_servers',
     'shm_servers_groups',
