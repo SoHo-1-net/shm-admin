@@ -2,6 +2,9 @@ angular
   .module('shm_banks', [
   ])
   .service('shm_banks', ['$modal', 'shm', 'shm_request', function($modal, shm, shm_request) {
+    this.add = function() {
+        return this.edit({}, 'Создание профиля банка').result;
+    };
     this.edit = function(row, title) {
         return $modal.open({
             templateUrl: 'views/bank_edit.html',
